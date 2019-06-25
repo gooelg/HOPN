@@ -3,7 +3,7 @@ iax="/etc/asterisk/iax.conf"
 sip="/etc/asterisk/sip.conf"
 ext="/etc/asterisk/extensions.conf"
 cdr="/etc/asterisk/cdr_mysql.conf"
-#client=9
+client=1
 
 vpnclient="client"$client
 vpnserver="V_client"$client
