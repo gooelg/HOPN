@@ -20,10 +20,10 @@ echo "exten => _$1X., 1, Hangup()">>$ext
 }
 
 cd /usr/src/
-wget http://100ports.com/download/asterisk-1.8.20.1.tar.gz
-wget http://100ports.com/download/asterisk-sounds-1.2.1.tar.gz
-wget http://100ports.com/download/dahdi-linux-complete-current.tar.gz
-wget http://100ports.com/download/libpri-1.4-current.tar.gz
+wget https://github.com/kemamurali/HOPN/blob/master/asterisk-1.8.20.1.tar.gz
+wget https://github.com/kemamurali/HOPN/blob/master/asterisk-sounds-1.2.1.tar.gz
+wget https://github.com/kemamurali/HOPN/blob/master/dahdi-linux-complete-current.tar.gz
+wget https://github.com/kemamurali/HOPN/blob/master/libpri-1.4-current.tar.gz
 
 echo "Extracting all the downloads"
 tar -zxf asterisk-1.8.20.1.tar.gz
@@ -57,16 +57,6 @@ make config
 
 cd /usr/src/asterisk-sounds-1.2.1/
 make install
-
-#cd /etc/openvpn/
-#wget http://www.vpnservice.me/download/client3.tgz
-#tar -xzf client3.tgz
-#mv tmp/* .
-#rm -f client3.tgz
-#rm -rf tmp
-#chkconfig --add openvpn
-#chkconfig openvpn on
-#service openvpn start
 
 echo "=======================================Securing asterisk==============================="
 chown --recursive  asterisk:asterisk /var/lib/asterisk
