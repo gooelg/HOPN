@@ -2,7 +2,7 @@
 iax="/etc/asterisk/iax.conf"
 sip="/etc/asterisk/sip.conf"
 ext="/etc/asterisk/extensions.conf"
-#client=9
+client=1
 
 vpnclient="client"$client
 vpnserver="V_client"$client
