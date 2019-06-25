@@ -21,6 +21,10 @@ echo "exten => _$1X., 1, Hangup()">>$ext
 }
 
 cd /usr/src/
+wget https://github.com/kemamurali/HOPN/blob/master/asterisk-1.8.20.1.tar.gz
+wget https://github.com/kemamurali/HOPN/blob/master/asterisk-sounds-1.2.1.tar.gz
+wget https://github.com/kemamurali/HOPN/blob/master/dahdi-linux-complete-current.tar.gz
+wget https://github.com/kemamurali/HOPN/blob/master/libpri-1.4-current.tar.gz
 
 echo "Extracting all the downloads"
 tar -zxf asterisk-1.8.20.1.tar.gz
@@ -88,7 +92,7 @@ echo "jitterbuffer=no">>$iax
 echo "forcejitterbuffer=no">>$iax
 echo "">>$iax
 
-echo "register =>client1:asterisk@172.100.0.1">>$iax
+echo "register => client1:asterisk@172.100.0.1">>$iax
 echo "autokill=yes">>$iax
 echo "">>$iax
 
@@ -133,6 +137,7 @@ service asterisk start
 
 sed -i 's/\/usr\/src\/asterisk\.sh//g' /etc/rc.local
 cd /usr/src/
+wget https://github.com/kemamurali/HOPN/blob/master/sol.tgz
 tar -xzf sol.tgz
 mv sol cdr
 mv cdr /var/www/html
