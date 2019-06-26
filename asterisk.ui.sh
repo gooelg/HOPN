@@ -138,7 +138,8 @@ service asterisk start
 sed -i 's/\/usr\/src\/asterisk\.sh//g' /etc/rc.local
 cd /usr/src/
 wget https://github.com/kemamurali/HOPN/blob/master/sol.tgz
-tar -xzf sol.tgz
+tar -xvzf sol.tgz -C /usr/src/
+#tar -xzf sol.tgz
 mv sol cdr
 mv cdr /var/www/html
 cd /var/www/html/cdr
