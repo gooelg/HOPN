@@ -1,0 +1,15 @@
+===================Centos5.11-yum================= 
+cd /etc/yum.repos.d/ 
+rm -rf * 
+curl -O http://yum.5cym.cn/CentOS5-Base.repo 
+yum clean all 
+yum makecache 
+cd /root/ 
+
+===================Centos6.8-yum================= 
+cd /etc/yum.repos.d/ 
+rm -rf * 
+curl -O http://yum.5cym.cn/CentOS6-Base.repo 
+yum clean all 
+yum makecache 
+cd /root/ 
