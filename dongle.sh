@@ -16,3 +16,22 @@ module reload now
 
 module load chan_dongle.so
 
+###########################################################################################
+
+wget http://packages.sw.be/rpmforge-release/rpmforge-release-0.5.2-2.el5.rf.i386.rpm
+rpm -i rpmforge-release-0.5.2-2.el5.rf.i386.rpm
+yum install libusb-devel.i386
+yum install usb_modeswitch
+yum install usb_modeswitch-data
+
+wget http://asterisk-chan-dongle.googlecode.com/files/chan_dongle-1.1.r14.tgz
+tar -zxvf chan_dongle-1.1.r14.tgz
+cd chan_dongle-1.1.r14
+./configure && make && make install
+cp etc/dongle.conf /etc/asterisk
+
+service asterisk restart
+asterisk -vvvvr
+dongle show devices
+
+#############################################################################################
