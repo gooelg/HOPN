@@ -16,6 +16,14 @@ module reload now
 
 module load chan_dongle.so
 
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+http://chan-dongle.blogspot.com/
+http://www.raspberry-asterisk.org/documentation/gsm-voip-gateway-with-chan_dongle/
+https://community.freepbx.org/t/chan-dongle/45132/9
+https://www.elastix.org/community/threads/chan_dongle.131964/
+http://www.adeleda.com/raspberry-pi-b-with-asterisk-and-chan_dongle-on-arch-linux-en.html
+https://andrius.mobi/2013/03/asterisk-on-raspberry-pi-as-gsm-gateway.html
+
 ###########################################################################################
 
 wget http://packages.sw.be/rpmforge-release/rpmforge-release-0.5.2-2.el5.rf.i386.rpm
