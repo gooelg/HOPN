@@ -1,0 +1,56 @@
+Manager commands
+Chan_dongle can provide the following manager commands:
+
+DongleShowDevices
+DongleSendUSSD
+DongleSendSMS
+DongleSendPDU
+DongleSetCCWA
+DongleReset
+DongleRestart
+DongleStop
+DongleStart
+DongleRemove
+DongleReload
+Manager Events
+Chan_dongle generates the following manager events:
+
+DongleDeviceEntry
+DongleShowDevicesComplete
+DongleUSSDStatus
+DongleSMSStatus
+DongleNewCUSD
+DongleNewUSSD
+DongleNewUSSDBase64
+DongleCEND
+DongleCallStateChange
+DongleStatus
+DongleNewCMGR
+DongleNewSMS
+DongleNewSMSBase64
+DonglePortFail
+
+IAX Channel commands
+
+iax2 debug: Enable IAX debugging
+iax2 no debug: Disable IAX debugging
+iax2 set jitter: Sets IAX jitter buffer
+iax2 show cache: Display IAX cached dialplan
+iax2 show channels: Show active IAX channels
+iax2 show netstats: Show network and jitter buffer statistics for active IAX calls
+iax2 show peers: Show defined IAX peers
+iax2 show registry: Show IAX registration status
+iax2 show stats: Display IAX statistics
+iax2 show users: Show defined IAX users
+iax2 trunk debug: Request IAX trunk debug
+iax debug: Enable IAX debugging
+iax no debug: Disable IAX debugging
+iax set jitter: Sets IAX jitter buffer
+iax show cache: Display IAX cached dialplan
+iax show channels: Show active IAX channels
+iax show peers: Show defined IAX peers
+iax show registry: Show IAX registration status
+iax show stats: Display IAX statistics
+iax show users: Show defined IAX users
+init keys: Initialize RSA key passcodes
+show keys: Displays RSA key information
